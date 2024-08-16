@@ -1,84 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnaud Raymond</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arnaud Raymond</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!--header-->
+    <header>
+      <nav id="navbar">
+        <a href="#" class="headerName"
+          >Arnaud Raymond <br />
+          mannequin</a
+        >
 
-<body>
-<!--header-->
-<header >
-  <nav id="navbar">
-    <a href="#" class="headerName" >Arnaud Raymond <br> mannequin</a>
-    
-    <ul class="headerMenu">
-      <li><a href="index.html" id="toTop">Accueil</a></li>
-      <li><a href="galerie.html">Galerie</a></li>
-      <li><a href="polas.html">Polas</a></li>
-  <li><a href="mailto:arnaudraymond.pro@gmail.com">Contact</a></li>
-    </ul>
-  </nav>
-  
-  </header>
+        <ul class="headerMenu">
+          <li><a href="index.html" id="toTop">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="polas.html">Polas</a></li>
+          <li><a href="mailto:arnaudraymond.pro@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<p class="polas">Mes Polas</p>
-        
-<section class="videopolas">
-<video controls width="30%" height="30%" src="images/polas/IMG_3737.MOV"></video>
-</section>
-    <ul class="polas">
+    <p class="polas">Mes Polas</p>
 
-<li><a href="images/polas/polas.JPG"> <img src="images/polas/polas.JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (1).JPG"> <img src="images/polas/polas (1).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (10).JPG"> <img src="images/polas/polas (10).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (11).JPG"> <img src="images/polas/polas (11).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (12).JPG"> <img src="images/polas/polas (12).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (13).JPG"> <img src="images/polas/polas (13).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (14).JPG"> <img src="images/polas/polas (14).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (15).JPG"> <img src="images/polas/polas (15).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (2).JPG"> <img src="images/polas/polas (2).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (3).JPG"> <img src="images/polas/polas (3).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (4).JPG"> <img src="images/polas/polas (4).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (5).JPG"> <img src="images/polas/polas (5).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (6).JPG"> <img src="images/polas/polas (6).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (7).JPG"> <img src="images/polas/polas (7).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (8).JPG"> <img src="images/polas/polas (8).JPG" alt="arnaud"></a></li>
-<li><a href="images/polas/polas (9).JPG"> <img src="images/polas/polas (9).JPG" alt="arnaud"></a></li>
+    <section class="videopolas">
+      <video
+        controls
+        width="30%"
+        height="30%"
+        src="images/polas/IMG_3737.MOV"
+      ></video>
+    </section>
 
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="./images/polas/polas-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (1)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (10)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (11)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (12)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(5)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (13)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(6)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (14)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(7)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (15)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(8)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (2)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(9)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (3)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(10)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (4)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(11)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (5)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(12)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (6)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(13)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (7)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(14)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (8)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(15)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./images/polas/polas (9)-min.JPG"
+          width="100%"
+          onclick="openModal();currentSlide(16)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
 
-    </ul>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 16</div>
+          <img src="./images/polas/polas-min.JPG" style="width: 100%" />
+        </div>
 
-</section>
+        <div class="mySlides">
+          <div class="numbertext">2 / 16</div>
+          <img src="./images/polas/polas (1)-min.JPG" style="width: 100%" />
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">3 / 16</div>
+          <img src="./images/polas/polas (10)-min.JPG" style="width: 100%" />
+        </div>
 
-<!--footer-->
-<footer>
-  <section class="logo">
-<div class="col1">
-  <p class="icons"> 
-    <a target="_blank" href="https://www.instagram.com/arnaud.raymond1/" class="lien-icone">
-    <svg xmlns="http://www.w3.org/2000/svg" height="10" width="8.75" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-  </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 16</div>
+          <img src="./images/polas/polas (11)-min.JPG" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 16</div>
+          <img src="./images/polas/polas (12)-min.JPG" style="width: 100%" />
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">6 / 16</div>
+          <img src="./images/polas/polas (13)-min.JPG" style="width: 100%" />
+        </div>
 
-<div class="col2"></div>
-<div class="col3"></div>
-<div class="col4">
-  <button onclick="link()">Retour haut de page</button>
-</div>
-</section>
+        <div class="mySlides">
+          <div class="numbertext">7 / 16</div>
+          <img src="./images/polas/polas (14)-min.JPG" style="width: 100%" />
+        </div>
 
-<p class="copy">© 2024 Arnaud Mannequin | Tous droits réservés | Réalisé par Judf</p>
+        <div class="mySlides">
+          <div class="numbertext">8 / 16</div>
+          <img src="./images/polas/polas (15)-min.JPG" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 16</div>
+          <img src="./images/polas/polas (2)-min.JPG" style="width: 100%" />
+        </div>
 
-</footer>
+        <div class="mySlides">
+          <div class="numbertext">10 / 16</div>
+          <img src="./images/polas/polas (3)-min.JPG" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 16</div>
+          <img src="./images/polas/polas (4)-min.JPG" style="width: 100%" />
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">12 / 16</div>
+          <img src="./images/polas/polas (5)-min.JPG" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">13 / 16</div>
+          <img src="./images/polas/polas (6)-min.JPG" style="width: 100%" />
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">14 / 16</div>
+          <img src="./images/polas/polas (7)-min.JPG" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 16</div>
+          <img src="./images/polas/polas (8)-min.JPG" style="width: 100%" />
+        </div>
 
-  <script src="./index.js"></script>
-</body>
+        <div class="mySlides">
+          <div class="numbertext">16 / 16</div>
+          <img src="./images/polas/polas (9)-min.JPG" style="width: 100%" />
+        </div>
+      </div>
 
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas-min.JPG"
+          width="60%"
+          onclick="currentSlide(1)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (1)-min.JPG"
+          width="60%"
+          onclick="currentSlide(2)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (10)-min.JPG"
+          width="60%"
+          onclick="currentSlide(3)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (11)-min.JPG"
+          width="60%"
+          onclick="currentSlide(4)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (12)-min.JPG"
+          width="60%"
+          onclick="currentSlide(5)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (13)-min.JPG"
+          width="60%"
+          onclick="currentSlide(6)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (14)-min.JPG"
+          width="60%"
+          onclick="currentSlide(7)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (15)-min.JPG"
+          width="60%"
+          onclick="currentSlide(8)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (2)-min.JPG"
+          width="60%"
+          onclick="currentSlide(9)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (3)-min.JPG"
+          width="60%"
+          onclick="currentSlide(10)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (4)-min.JPG"
+          width="60%"
+          onclick="currentSlide(11)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (5)-min.JPG"
+          width="60%"
+          onclick="currentSlide(12)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (6)-min.JPG"
+          width="60%"
+          onclick="currentSlide(13)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (7)-min.JPG"
+          width="60%"
+          onclick="currentSlide(14)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (8)-min.JPG"
+          width="60%"
+          onclick="currentSlide(15)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          class="demo"
+          src="./images/polas/polas (9)-min.JPG"
+          width="60%"
+          onclick="currentSlide(16)"
+        />
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <section class="logo">
+        <div class="col1">
+          <p class="icons">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/arnaud.raymond1/"
+              class="lien-icone"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="10"
+                width="8.75"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </p>
+        </div>
+
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <div class="col4">
+          <button onclick="link()">Retour haut de page</button>
+        </div>
+      </section>
+
+      <p class="copy">
+        © 2024 Arnaud Mannequin | Tous droits réservés | Réalisé par Judf
+      </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>

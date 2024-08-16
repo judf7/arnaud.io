@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arnaud Raymond</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -26,39 +26,137 @@
   
   </header>
 
-  <div class="marquee">
-    <span><i class="fa-solid fa-chevron-down"></i>Cliquez pour agrandir <i class="fa-solid fa-chevron-down"></i></span>
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="./images/reste/img (1)o.jpg" width="100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (10)-min.jpg" width="100%"onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (11)-min.jpg" width="100%"onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (12)-min.jpg" width="100%"onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (13)-min.jpg" width="100%"onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (5)-min.jpg" width="100%"onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (3)-min.jpg" width="100%"onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (7)-min.jpg" width="100%"onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (9)-min.jpg" width="100%"onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/reste/img (4)-min.jpg" width="100%"onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div>
 </div>
 
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-<ul class="gallery">
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="./images/reste/img (1)o.jpg" style="width:100%">
+    </div>
 
-<li><a href="images/reste/img (1).jpg"><img src="images/reste/img (1).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (10).jpg"><img src="images/reste/img (10).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (11).jpg"><img src="images/reste/img (11).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (12).jpg"><img src="images/reste/img (12).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (13).jpg"> <img src="images/reste/img (13).jpg" alt="Arnaud"></a></li>
-<li> <a href="images/reste/img (15).jpg"><img src="images/reste/img (15).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (17).jpg"><img src="images/reste/img (17).jpg" alt="Arnaud"></a></li>   
-<li><a href="images/reste/img (19).jpg"><img src="images/reste/img (19).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (2).jpg"><img src="images/reste/img (2).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (20).jpg"><img src="images/reste/img (20).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (3).jpg"><img src="images/reste/img (3).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (4).jpg"><img src="images/reste/img (4).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (5).jpg"><img src="images/reste/img (5).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (7).jpg"><img src="images/reste/img (7).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (8).jpg"><img src="images/reste/img (8).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (9).jpg"><img src="images/reste/img (9).jpg" alt="Arnaud"></a></li>
-<li><a href="images/reste/img (6).jpg"><img src="images/reste/img (6).jpg" alt="Arnaud"></a></li>
-<li> <a href="images/img (14).jpg"> <img src="images/img (14).jpg" alt="Arnaud"width="100%" ></a></li>
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="./images/reste/img (10)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="./images/reste/img (11)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="./images/reste/img (12)-min.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="./images/reste/img (13)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="./images/reste/img (5)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="./images/reste/img (3)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="./images/reste/img (7)-min.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="./images/reste/img (9)-min.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="./images/reste/img (4)-min.jpg" style="width:100%">
+    </div>
+  </div>
 
 
-</ul>
 
-</section>
-<script src="index.js"></script>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</body>
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./images/reste/img (1)o.jpg" width="60%" onclick="currentSlide(1)" >
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/reste/img (10)-min.jpg" width="60%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="./images/reste/img (11).jpg" width="60%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="./images/reste/img (12).jpg" width="60%"onclick="currentSlide(4)">
+    </div>
+      <div class="column">
+        <img class="demo" src="./images/reste/img (13)-min.jpg" width="60%" onclick="currentSlide(5)" >
+      </div>
+      <div class="column">
+        <img class="demo" src="./images/reste/img (5).jpg" width="60%" onclick="currentSlide(6)" >
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/reste/img (3).jpg" width="60%"onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo" src="./images/reste/img (7)-min.jpg" width="60%" onclick="currentSlide(8)" >
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="./images/reste/img (9).jpg" width="60%" onclick="currentSlide(9)" >
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="./images/reste/img (4).jpg" width="60%"onclick="currentSlide(10)">
+        </div>
+  
+</div>
 
 <!--footer-->
 <footer>
@@ -83,7 +181,7 @@
 
 
 
-  <script src="./index.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>
