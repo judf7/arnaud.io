@@ -113,15 +113,27 @@ width: 100%;
 height: 100%;
 }
 @keyframes fondu {
-  0%{opacity: 0.7;
-    background-image: url(./images/mis/img\ \(16\).jpg);}
-  15%{ opacity: 1;
-    background-image: url(./images/mis/img\ \(16\).jpg);}
-  50%{opacity: 1;
-    background-image: url(./images/mis/img\ \(20\).jpg);}
-  100%{opacity: 0.6;
-     background-image: url(./images/mis/img\ \(8\).jpg);}  
-}
+  0% {
+  opacity: 0.7;
+  background-image: url(./images/mis/img\ \(16\).jpg);
+  }
+  25% {
+  opacity: 1;
+  background-image: url(./images/mis/img\ \(16\).jpg);
+  }
+  50% {
+  opacity: 1;
+  background-image: url(./images/mis/img\ \(20\).jpg);
+  }
+  75% {
+  opacity: 0.7;
+  background-image: url(./images/mis/img\ \(20\).jpg);
+  }
+  100% {
+  opacity: 0.6;
+  background-image: url(./images/mis/img\ \(8\).jpg);
+  }
+  }
 .animImg {
   padding-top:70%;
   box-shadow: 0px 0px 0px #DDD0C8;
@@ -274,8 +286,20 @@ img{
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
-  width: 25%;
+  max-width: 25%;
+}
 
+.columnDemo {
+  max-width: 100%;
+  margin-top : 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 8% 8% 8% 8% 8%;
+  padding: 0;
+}
+img.demo{
+  max-width:500%;
 }
 
 /* The Modal (background) */
@@ -298,8 +322,7 @@ img{
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 50%;
-  max-width: 1200px;
+  max-width: 30%;
 }
 
 /* The Close Button */
@@ -375,6 +398,8 @@ img.demo {
 img.hover-shadow {
   transition: 0.3s;
 }
+
+
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -528,7 +553,7 @@ transition: 3s ease-out;
     }
   }
   @media only screen and (max-width: 800px){ 
-    nav{    grid-template-columns: 30% 70%;
+    nav{ grid-template-columns: 30% 70%;
       }
     .partieMensurations{
       grid-template-columns: 30% 70%;
@@ -553,6 +578,15 @@ transition: 3s ease-out;
       height: 110px;
       font-size: 0.8rem;
       margin-top: 8px;
+    }
+    .modal-content {
+      max-width: 50%;
+    }
+    .columnDemo {
+      grid-template-columns: 13% 13% 13% 13% 13%;
+    }
+    img.demo{
+      max-width:500%;
     }
   }
   @media only screen and (max-width: 600px){ 
@@ -656,9 +690,9 @@ transition: 3s ease-out;
       width: 80%;
       padding: 50px;
     }
-   
-
   }
+
+
 
   @media only screen and (max-width: 480px){ 
     .icons::after{
@@ -679,4 +713,14 @@ transition: 3s ease-out;
     .icons svg {
   margin-left: 100%;
  }
+ .modal-content {
+  max-width: 60%;
+}
+
+.columnDemo {
+  grid-template-columns: 18% 18% 18% 18% 18%;
+}
+img.demo{
+  max-width:500%;
+}
   }
