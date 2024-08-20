@@ -605,7 +605,7 @@ transition: 3s ease-out;
       grid-template-columns: 13% 13% 13% 13% 13%;
     }
     img.demo{
-      max-width:500%;
+      opacity: 0;
     }
   }
   @media only screen and (max-width: 600px){ 
@@ -684,9 +684,7 @@ transition: 3s ease-out;
     .icons svg {
       margin-left: 140%;
      }
-     .columnDemo,.demoPolas{
-      opacity: 0;
-     }
+ 
      
    
   }
