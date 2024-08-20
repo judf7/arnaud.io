@@ -307,6 +307,19 @@ img{
 img.demo{
   max-width:500%;
 }
+.demoPolas{
+  max-width: 100%;
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 20% 20% 20% 20%;
+  padding: 0;
+}
+.columnP {
+  max-width: 100%;
+
+}
 
 /* The Modal (background) */
 .modal {
@@ -671,33 +684,12 @@ transition: 3s ease-out;
     .icons svg {
       margin-left: 140%;
      }
+     .columnDemo,.demoPolas{
+      opacity: 0;
+     }
+     
    
   }
-
-  @media only screen and (min-width: 1400px){ 
-    a.headerName{
-      font-size: 1.6rem;
-    }
-    .headerMenu a{
-      font-size: 1.2rem;
-
-    }
-    .title{
-      font-size: 2.8rem;
-    }
-
-    ul.mensuration{
-      font-size: 1.8rem;
-      line-height: 200%;
-    }
-    .mesDispos p {
-      font-size: 1.8rem;
-      line-height: 200%;
-      width: 80%;
-      padding: 50px;
-    }
-  }
-
 
 
   @media only screen and (max-width: 480px){ 
@@ -729,4 +721,28 @@ transition: 3s ease-out;
 img.demo{
   max-width:500%;
 }
+  }
+
+  @media only screen and (min-width: 1400px){ 
+    a.headerName{
+      font-size: 1.6rem;
+    }
+    .headerMenu a{
+      font-size: 1.2rem;
+
+    }
+    .title{
+      font-size: 2.8rem;
+    }
+
+    ul.mensuration{
+      font-size: 1.8rem;
+      line-height: 200%;
+    }
+    .mesDispos p {
+      font-size: 1.8rem;
+      line-height: 200%;
+      width: 80%;
+      padding: 50px;
+    }
   }
